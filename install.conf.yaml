@@ -1,0 +1,23 @@
+- defaults:
+    link:
+      relink: true
+      #force: true
+
+- clean:
+    ~/:
+    ~/.config:
+      recursive: true
+
+- link:
+    ~/.config/alacritty: alacritty
+    ~/.config/btop: btop
+    ~/.config/gtk-3.0: gtk-3.0
+    #~/.config/gtk-4.0: gtk-4.0
+    ~/.config/elvish: elvish
+    ~/.config/hypr: hypr
+    ~/.gitconfig: gitconfig
+    ~/.config/electron-flags.conf: electron.conf
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Dark']

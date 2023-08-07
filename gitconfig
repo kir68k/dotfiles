@@ -1,0 +1,10 @@
+[init]
+    defaultBranch = stream
+
+[user]
+    name = Kirixetamine
+    email = revelation@krxt.dev
+    signingKey = 0x998ACFC06DC18497
+
+[commit]
+    gpgSign = true

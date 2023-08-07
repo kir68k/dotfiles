@@ -1,0 +1,18 @@
+shell                   = { program = "elvish" }
+
+live_config_reload      = true
+
+[window]
+dynamic_padding         = true
+opacity                 = 0.85
+resize_increments       = true
+
+[scrolling]
+history                 = 100000
+multiplier              = 4
+
+[font]
+normal                  = { family = "Iosevka NFM", style = "Regular" }
+bold                    = { family = "Iosevka NFM", style = "Bold"    }
+italic                  = { family = "Iosevka NFM", style = "Italic"  }
+size                    = 14
