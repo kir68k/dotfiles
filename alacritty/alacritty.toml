@@ -12,7 +12,41 @@ history                 = 100000
 multiplier              = 4
 
 [font]
-normal                  = { family = "Iosevka NFM", style = "Regular" }
-bold                    = { family = "Iosevka NFM", style = "Bold"    }
-italic                  = { family = "Iosevka NFM", style = "Italic"  }
-size                    = 14
+#normal                  = { family = "Iosevka NFM", style = "Regular" }
+#bold                    = { family = "Iosevka NFM", style = "Bold"    }
+#italic                  = { family = "Iosevka NFM", style = "Italic"  }
+
+normal                  = { family = "FiraCode Nerd Font", style = "Regular" }
+bold                    = { family = "FiraCode Nerd Font", style = "Bold"    }
+italic                  = { family = "FiraCode Nerd Font", style = "Italic"  }
+
+
+size                    = 13
+
+[cursor.style]
+shape = "Underline"
+
+# TOML does not support includes by design.
+[colors.primary]
+background = "0x2A242D"
+foreground = "0xFFFEF7"
+
+[colors.normal]
+black = "0x1F1922"
+red = "0xFF4783"
+green = "0x9BF97E"
+yellow = "0xFFCE58"
+blue = "0x9AD1FF"
+magenta = "0xFFA0FF"
+cyan = "0x9BF3E1"
+white = "0xFFFEF7"
+
+[colors.bright]
+black = "0x3F3842"
+red = "0xFF709D"
+green = "0xB8FF99"
+yellow = "0xFFEA74"
+blue = "0xC0EDFF"
+magenta = "0xFFAFFF"
+cyan = "0xB8FFFE"
+white = "0xFFFEF7"

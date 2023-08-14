@@ -22,4 +22,5 @@ fn mv   { |@a| e:mv -v $@a    }
 fn cp   { |@a| e:cp -v $@a    }
 fn rm   { |@a| e:rm -rvI $@a  }
 fn ln   { |@a| e:ln -v $@a    }
+fn cls  { |@a| e:clear $@a    }
 fn diff { |@a| e:diff -u --color $@a }
