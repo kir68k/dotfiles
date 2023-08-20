@@ -17,6 +17,7 @@
     ~/.config/elvish: elvish
     ~/.config/hypr: hypr
     ~/.config/neofetch: neofetch
+    ~/.config/nixpkgs: nixpkgs
     ~/.gitconfig: gitconfig
     ~/.config/chromium-flags.conf: chromium.conf
     ~/.config/electron-flags.conf: electron.conf

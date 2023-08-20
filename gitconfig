@@ -8,3 +8,5 @@
 
 [commit]
     gpgSign = true
+[credential]
+	helper = libsecret
