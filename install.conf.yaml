@@ -16,11 +16,14 @@
     ~/.config/eww: eww
     ~/.config/elvish: elvish
     ~/.config/hypr: hypr
+    ~/.config/labwc: labwc
+    ~/.config/kanshi: kanshi
     ~/.config/neofetch: neofetch
     ~/.config/nixpkgs: nixpkgs
     ~/.gitconfig: gitconfig
     ~/.config/chromium-flags.conf: chromium.conf
     ~/.config/electron-flags.conf: electron.conf
+    ~/.local/bin: bin
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

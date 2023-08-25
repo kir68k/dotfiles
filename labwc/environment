@@ -1,0 +1,34 @@
+# Used by xdg-desktop-portal
+XDG_CURRENT_DESKTOP="wlroots"
+XDG_SESSION_TYPE="wayland"
+
+# Default kb layout
+XKB_DEFAULT_LAYOUT=dk
+
+# Enable fcitx as kb layout manager
+XMODIFIERS="@im=fcitx"
+QT_IM_MODULE="fcitx"
+GTK_IM_MODULE="fcitx"
+
+# Enable wayland for Firefox
+MOZ_ENABLE_WAYLAND=1
+
+# Cursors
+XCURSOR_SIZE=24
+XCURSOR_THEME=macOS-monterey
+
+# Avoids menus with incorrect offsets or blank windows in Java programs
+_JAVA_AWT_WM_NONREPARENTING=1
+
+# Compatibility toolkit settings
+GDK_BACKEND="wayland,x11"
+QT_QPA_PLATFORM="wayland;xcb"
+QT_QPA_PLATFORMTHEME="qt5ct"
+CLUTTER_BACKEND="wayland"
+
+QT_AUTO_SCREEN_SCALE_FACTOR="1"
+QT_ENABLE_HIGHDPI_SCALING="1"
+
+# Needs VERY recent GTK+ version
+GDK_DEBUG="gl-fractional"
+GDK_SCALE="1.5"

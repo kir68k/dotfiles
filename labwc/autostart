@@ -1,0 +1,22 @@
+# Wallpaper
+swww init && swww img background.png
+
+# Output res/scaling
+kanshi >/dev/null 2>&1 &
+
+# Bar/Widgets
+eww open bar >/dev/null 2>&1 &
+
+# Notification daemon
+mako >/dev/null 2>&1 &
+
+# Keyboard layout management
+fcitx5 >/dev/null 2>&1 &
+
+# Clipboard management
+wl-paste --type text --watch cliphist store     &   # Store text
+wl-paste --type image --watch cliphist store    &   # Store images
+wl-clip-persist --clipboard both                &   # Persist clipboard after window close
+
+# Set xwayland scaling to 1.5, hopefully????¿kjslkjacxz
+xprop -root -f _XWAYLAND_GLOBAL_OUTPUT_SCALE 32c -set _XWAYLAND_GLOBAL_OUTPUT_SCALE 1.5 &
