@@ -1,5 +1,6 @@
 # Prevents "inappropriate ioctl for device" when signing
 set E:GPG_TTY = (tty)
+set E:SSH_AUTH_SOCK = $E:XDG_RUNTIME_DIR/ssh-agent.socket
 
 # Paths
 set E:NPM_PACKAGES = $E:HOME/.npm-packages

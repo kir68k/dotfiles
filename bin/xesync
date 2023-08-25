@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+shopt -s dotglob
+
+srcdir="$1"
+key="$2"
+host="$3"
+destdir="$4"
+
+tar -I zstd -cf $srcdir         |
+    mbuffer -m 4096M            |
+    ssh -i ~/.ssh/$key $host    \
+    "(cd $destdir; tar -I zstd -xf -)"
