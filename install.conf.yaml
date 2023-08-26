@@ -23,7 +23,8 @@
     ~/.gitconfig: gitconfig
     ~/.config/chromium-flags.conf: chromium.conf
     ~/.config/electron-flags.conf: electron.conf
-    ~/.local/bin: bin
+    ~/.local/bin: local/bin
+    ~/.local/share/applications: local/share/applications
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
