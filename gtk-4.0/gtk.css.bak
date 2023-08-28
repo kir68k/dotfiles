@@ -31,6 +31,8 @@
 @define-color popover_fg_color #FFFEF7;
 @define-color shade_color rgba(0, 0, 0, 0.36);
 @define-color scrollbar_outline_color rgba(0, 0, 0, 0.5);
+@define-color sidebar_bg_color #2A242D;
+@define-color sidebar_fg_color #FFFEF7;
 @define-color blue_1 rgb(153,193,241);
 @define-color blue_2 rgb(98,160,234);
 @define-color blue_3 rgb(154,209,255);

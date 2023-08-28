@@ -1,2 +1,27 @@
-#!/usr/bin/env sh
-pdftotext -enc UTF-8 $1 - | wc -c
+#!/usr/bin/env bash
+set +u
+
+command="pdftotext -enc UTF-8"
+
+while [[ "$1" = --* ]]; do
+    opt="$1";
+    file="$2"
+    shift;
+    
+    if [[ ! -f "$file" ]]; then
+        echo >&2 "File $file does not exist, not running.";
+        exit 1;
+    elif [[ "$file" != *.pdf ]]; then
+        echo >&2 "Filetype must be: .pdf";
+        exit 1;
+    fi
+
+    case "$opt" in
+        "--" ) break 2;;
+        "--word" )
+            $command $file - | wc -w ;;
+        "--char" )
+            $command $file - | wc -c ;;
+        *) echo >&2 "Invalid argument: $@"; exit 1;;
+    esac
+done
